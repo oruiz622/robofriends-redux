@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ErrorBoundary extends Component {
+export class ErrorBoundary extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -19,3 +19,5 @@ class ErrorBoundary extends Component {
 		return this.props.children;
 	}
 }
+
+// module.exports = ErrorBoundary;

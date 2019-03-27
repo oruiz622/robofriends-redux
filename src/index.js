@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider, connect } from 'react-redux';
 import { createStore } from 'redux';
-import { searchRobots } from './reducers';
+import { searchRobots } from './reducer';
 import './index.css';
 import 'tachyons';
 import App from './containers/App';

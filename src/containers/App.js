@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
+import { ErrorBoundary } from '../components/ErrorBoundary';
 import './App.css';
-import ErrorBoundary from '../components/ErrorBoundary';
 import Scroll from '../components/Scroll';
 
 class App extends Component {
@@ -15,6 +15,7 @@ class App extends Component {
 	}
 
 	componentDidMount() {
+		console.log(this.props.store);
 		fetch('https://jsonplaceholder.typicode.com/users')
 			.then(response => {
 				return response.json();
